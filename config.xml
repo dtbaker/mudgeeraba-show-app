@@ -36,7 +36,7 @@
     <access origin="*" />
 
     <plugin name="cordova-plugin-statusbar" source="npm" />
-    <plugin name="org.apache.cordova.geolocation" />
+    <plugin name="cordova-plugin-geolocation" source="npm" />
 
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
