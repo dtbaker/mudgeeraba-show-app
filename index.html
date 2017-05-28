@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/material-icons.css">
-    <link rel="stylesheet" href="css/my-app.css">
-    <link rel="icon" href="img/icon.png">
-      <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ https://maps.google.com/maps/api/js 'unsafe-inline' 'unsafe-eval'">
+     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.google.com/maps-api-v3/ https://maps.gstatic.com/ https://mts0.googleapis.com/ https://maps.google.com/maps/api/js 'unsafe-inline' 'unsafe-eval'"> -->
   </head>
   <body>
     <div class="statusbar-overlay"></div>
@@ -199,9 +197,14 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/framework7.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRakXMpAV6sx3zoadgDpQK7F4gGg_JlMk"></script>
+    <script type="text/javascript" src="js/my-app-init.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyDRakXMpAV6sx3zoadgDpQK7F4gGg_JlMk"></script>
     <script type="text/javascript" src="js/geolocation-marker.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <!--<script type="text/javascript" src="https://gctechspace.org/app/mudgshow17/public/my-app.js"></script>-->
+    <script type="text/javascript" src="public/my-app.js"></script>
+    <link rel="stylesheet" href="public/my-app.css">
   </body>
 </html>

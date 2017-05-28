@@ -2,10 +2,12 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.phonegap.example"
-        versionCode = "10"
-        version     = "1.0.0" >
+        versionCode = "101"
+        version     = "1.0.1" >
 
-    <!-- versionCode is optional and Android only -->
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>101</string>
+    </gap:config-file>
 
     <name>Mudgeeraba Show</name>
 
@@ -17,6 +19,12 @@
         dtbaker
     </author>
 
+    <preference name="StatusBarBackgroundColor" value="#4cbcf7" />
+
+    <gap:platforms>
+        <gap:platform name="ios" />
+    </gap:platforms>
+
     <access origin="*.google.com" />
     <access origin="*.googleapis.com" />
     <access origin="*.gstatic.com" />
@@ -25,6 +33,12 @@
     <access origin="googleapis.com" subdomains="true"/>
     <access origin="gstatic.com" subdomains="true"/>
     <access origin="googleusercontent.com" subdomains="true"/>
+    <access origin="*" />
 
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
 
 </widget>
