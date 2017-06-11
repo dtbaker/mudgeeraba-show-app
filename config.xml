@@ -19,7 +19,7 @@
         dtbaker
     </author>
 
-    <preference name="StatusBarBackgroundColor" value="#4cbcf7" />
+    <preference name="StatusBarBackgroundColor" value="#268c35" />
 
     <gap:platforms>
         <gap:platform name="ios" />
