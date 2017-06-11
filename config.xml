@@ -38,6 +38,7 @@
     <plugin name="cordova-plugin-statusbar" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
 
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <feature name="http://api.phonegap.com/1.0/network"/>

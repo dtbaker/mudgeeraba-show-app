@@ -1,6 +1,7 @@
 // Initialize your app
 var myApp = new Framework7({
     // Enable Material theme
+    modalTitle: 'Mudgeeraba Show',
     material: true
 });
 
