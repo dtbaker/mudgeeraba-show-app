@@ -2,11 +2,11 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.dtbaker.mudgeeshow17"
-        versionCode = "101"
-        version     = "1.0.1" >
+        versionCode = "102"
+        version     = "1.0.2" >
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>101</string>
+        <string>102</string>
     </gap:config-file>
 
     <name>Mudgeeraba Show</name>
