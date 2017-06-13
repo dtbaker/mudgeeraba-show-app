@@ -2,11 +2,11 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.dtbaker.mudgeeshow17"
-        versionCode = "102"
-        version     = "1.0.2" >
+        versionCode = "103"
+        version     = "1.0.3" >
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>102</string>
+        <string>103</string>
     </gap:config-file>
 
     <name>Mudgeeraba Show</name>
@@ -20,6 +20,10 @@
     </author>
 
     <preference name="StatusBarBackgroundColor" value="#268c35" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
 
     <gap:platforms>
         <gap:platform name="ios" />
@@ -35,6 +39,7 @@
     <access origin="googleusercontent.com" subdomains="true"/>
     <access origin="*" />
 
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
@@ -72,5 +77,26 @@
     <icon gap:platform="android" gap:qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
     <icon gap:platform="android" gap:qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
 
+    <splash src="splash.png" />
+
+    <splash gap:platform="ios" height="480" width="320" src="res/screens/ios/screen-iphone-portrait.png" />
+    <splash gap:platform="ios" height="960" width="640" src="res/screens/ios/screen-iphone-portrait-2x.png" />
+    <splash gap:platform="ios" height="1024" width="768" src="res/screens/ios/screen-ipad-portrait.png" />
+    <splash gap:platform="ios" height="2048" width="1536" src="res/screens/ios/screen-ipad-portrait-2x.png" />
+    <splash gap:platform="ios" height="768" width="1024" src="res/screens/ios/screen-ipad-landscape.png" />
+    <splash gap:platform="ios" height="1536" width="2048" src="res/screens/ios/screen-ipad-landscape-2x.png" />
+    <splash gap:platform="ios" height="1136" width="640" src="res/screens/ios/screen-iphone-568h-2x.png" />
+    <splash gap:platform="ios" height="1334" width="750" src="res/screens/ios/screen-iphone-portrait-667h.png" />
+    <splash gap:platform="ios" height="2208" width="1242" src="res/screens/ios/screen-iphone-portrait-736h.png" />
+    <splash gap:platform="ios" height="1242" width="2208" src="res/screens/ios/screen-iphone-landscape-736h.png" />
+
+    <splash gap:platform="android" gap:qualifier="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
+    <splash gap:platform="android" gap:qualifier="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
+    <splash gap:platform="android" gap:qualifier="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
+    <splash gap:platform="android" gap:qualifier="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
+    <splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+    <splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
 
 </widget>
